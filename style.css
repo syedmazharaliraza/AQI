@@ -6,7 +6,11 @@
   html{
     background-color:#eee;
   }
-
+  
+a{
+    text-decoration:none;
+    color:black;
+}
   .container{
     margin: 10px 10px 10px 10px;
     margin-left:70px;
