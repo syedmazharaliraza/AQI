@@ -1,93 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>grid</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav class="navigation">
+<html>
+    <head>
+        <meta http-equiv="refresh" content="3 ;url=https://jhaashutosh.github.io/AQI/aqi.html" />
+        <title>
+          Welcome page
+      </title>
+      <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet"> 
+
+      <style>
+body {
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:black;
+}
+section{
+height:100%;
+width:100%;
+  position:absolute ;  background:radial-gradient(#333,#000);
+}
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
         
-    <div class="pc">
-        <ul class="ul_logo">
-            <li class="logo_stuff"><img src="earth.png" alt="" id="logoimg"></li>
-            <li class="logo_stuff"> <div class="logo_text">
-                <span id="logo_text">
-                    GreenEco
-                </span>
-            </div></li>
-        </ul>
-        <ul class="nav_text">
-            <li class="nav_items"><a href="https://madhurgera2.github.io/prediction/"> FACTS</a></li>
-            <li class="nav_items"><a href="https://en.wikipedia.org/wiki/Climate_change"> ARTICLE</a></li>
-            <li class="nav_items"><a href="https://www.nationalgeographic.com/environment/">RESOURCES</a></li>
-            <li class="nav_items"><a href="https://climate.nasa.gov/"> EXPLORE</a></li>
-            <!-- <li class="nav_items"><a href="#"> SEARCH</a></li> -->
-        </ul>
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
         
-        <div class="dropdown">
-            <button class="click">
-                <img src="menu.png" alt="">
-            </button>
-        </div>
-    </div>
-</nav>
-    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-        <source src="changingweather.mp4" type="video/webm">
-      </video>
-      
-    <div class="container">
-        <!-- <iframe src="https://giphy.com/embed/oNTQZNB67kMf5VHiCj" width="100" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/loop-trippy-3d-oNTQZNB67kMf5VHiCj">via GIPHY</a></p> -->
-        <div class="box1 item"><a href="aqitracker/index.html">AQI(AIR QUALITY INDEX)</a></div>
-        <div class="box1 item"><a href="https://syedmazharaliraza.github.io/GreenEco/">WEATHER FORECASTING</a></div>
-        <div class="box1 item"><a href=" https://objective-swanson-567ffd.netlify.app/">CLIMATE CHANGE</a></div>
-        <div class="box1 item"><a href="https://madhurgera2.github.io/prediction/">INTERESTING PREDICTIONS</a></div>
-      </div>
-      <footer>
-        <div class="content">
-          <div class="left box">
-            <div class="upper">
-              <div class="topic">About us</div>
-              <p>GreenEco is a environment based website which helps you to know everyhing related to environment around you and around the world</p>
-            </div>
-            <div class="lower">
-              <div class="topic">Contact us</div>
-              <div class="phone">
-                <a href="#"><i class="fas fa-phone-volume"></i>xxxxxxxxx</a>
-              </div>
-              <div class="email">
-                <a href="#"><i class="fas fa-envelope"></i>greeneco@gmail.com</a>
-              </div>
-            </div>
-          </div>
-          <div class="middle box">
-            <div class="topic">Our Services</div>
-            <div><a href="#">Weather Forcasting</a></div>
-            <div><a href="#">AQI Predictions</a></div>
-            <div><a href="#">Intresting predictions</a></div>
-            <div><a href="#">Suggestions</a></div>
-          </div>
-          <div class="right box">
-            <div class="topic">Subscribe us</div>
-            <form action="#">
-              <input type="text" placeholder="Enter email address">
-              <input type="submit" name="" value="Send">
-              <!-- <div class="media-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div> -->
-            </form>
-          </div>
-        </div>
-        <div class="bottom">
-          <p>Copyright © 2020 <a href="#">GreenEco</a> All rights reserved</p>
-        </div>
-      </footer>
-</body>
-<script src="script.js"></script>
-</html>
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+h2{
+    position:absolute ;
+    top:40%;
+    width:100%;
+    font-family: 'Courgette', cursive;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
+
+   
+}
+.btn{
+        color: red;
+        width:7%;
+        height:30px;
+        border-radius: 20%;
+        align-items: center;
+    }    
+      </style>
+    </head>
+    <body>
+        
+    <section>
+        <h2>
+            A warm Welcome from CodeGeeks
+            </h2>
+     <div class="leaf">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf1">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf2">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     </section>
+<script>
+
+</script>
+    </body>
+</html
